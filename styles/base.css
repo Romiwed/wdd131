@@ -1,17 +1,3 @@
-:root {
-  --primary-color: #1f5273;
-  --secondary-color: #2f2f2f;
-  --accent-color: #f4c542;
-  --background-color: #f7f7f7;
-  --card-color: #ffffff;
-  --text-color: #222222;
-
-  --white-color: #ffffff;
-  --black-color: #000000;
-  --border-color: #b8b8b8;
-  --light-border: #cccccc;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -19,21 +5,21 @@
 body {
   margin: 0;
   font-family: "Roboto", Arial, sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  color: #222222;
+  background-color: #f7f7f7;
 }
 
 header {
   max-width: 1000px;
   margin: 0 auto;
-  background-color: var(--primary-color);
+  background-color: #1f5273;
 }
 
 #course-title {
   display: block;
   padding: 1.2rem;
   text-align: center;
-  color: var(--white-color);
+  color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
@@ -42,19 +28,19 @@ header {
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: var(--secondary-color);
+  background-color: #2f2f2f;
 }
 
 nav a {
   padding: 1rem;
-  color: var(--white-color);
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
 }
 
 nav a:hover {
-  background-color: var(--accent-color);
-  color: var(--black-color);
+  background-color: #f4c542;
+  color: #000000;
 }
 
 main {
@@ -73,8 +59,8 @@ h1 {
 }
 
 .card {
-  background-color: var(--card-color);
-  border: 1px solid var(--border-color);
+  background-color: #ffffff;
+  border: 1px solid #b8b8b8;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -83,8 +69,8 @@ h1 {
   margin: 0;
   padding: 0.8rem;
   text-align: center;
-  color: var(--white-color);
-  background-color: var(--primary-color);
+  color: #ffffff;
+  background-color: #1f5273;
   font-size: 1.1rem;
 }
 
@@ -93,7 +79,7 @@ h1 {
   margin: 1rem auto;
   padding-bottom: 0.4rem;
   text-align: center;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #b8b8b8;
 }
 
 .card p,
@@ -118,7 +104,7 @@ h1 {
 .about-content img {
   width: 120px;
   height: auto;
-  border: 1px solid var(--light-border);
+  border: 1px solid #cccccc;
 }
 
 .country {
@@ -137,7 +123,7 @@ h1 {
 .country img {
   width: 140px;
   height: auto;
-  border: 1px solid var(--light-border);
+  border: 1px solid #cccccc;
 }
 
 figcaption {
@@ -159,8 +145,8 @@ footer {
   margin: 0 auto;
   padding: 1rem;
   text-align: center;
-  color: var(--white-color);
-  background-color: var(--primary-color);
+  color: #ffffff;
+  background-color: #1f5273;
 }
 
 footer p {
@@ -168,6 +154,6 @@ footer p {
 }
 
 #lastModified {
-  color: var(--accent-color);
+  color: #f4c542;
   font-size: 0.9rem;
 }
