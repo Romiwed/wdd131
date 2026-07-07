@@ -1,24 +1,24 @@
-@media screen and (min-width: 768px) {
-  header {
-    padding: 1rem 2rem;
-  }
+@media screen and (min-width: 37.5em) {
 
-  #menu {
-    display: none;
-  }
+    #menu {
+        display: none;
+    }
 
-  .navigation {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    width: auto;
-  }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+        margin-top: 0;
+    }
 
-  .navigation a {
-    padding: 0.75rem 1rem;
-  }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-  .temple-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
