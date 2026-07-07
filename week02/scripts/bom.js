@@ -2,19 +2,27 @@ const input = document.querySelector("#favchap");
 const button = document.querySelector("button");
 const list = document.querySelector("#list");
 
-// Crear el elemento de la lista
-const li = document.createElement("li");
+button.addEventListener("click", function () {
+    if (input.value.trim() !== "") {
+        const li = document.createElement("li");
+        const deleteButton = document.createElement("button");
 
-// Agregar un capítulo de ejemplo
-li.textContent = "Alma 5";
+        li.textContent = input.value;
 
-// Crear el botón de eliminar
-const deleteButton = document.createElement("button");
-deleteButton.textContent = "❌";
-deleteButton.setAttribute("aria-label", "Remove Alma 5");
+        deleteButton.textContent = "❌";
+        deleteButton.setAttribute("aria-label", `Remove ${input.value}`);
 
-// Agregar el botón al elemento de la lista
-li.append(deleteButton);
+        li.append(deleteButton);
+        list.append(li);
 
-// Agregar el elemento de la lista al <ul>
-list.append(li);
+        deleteButton.addEventListener("click", function () {
+            list.removeChild(li);
+            input.focus();
+        });
+
+        input.value = "";
+        input.focus();
+    } else {
+        input.focus();
+    }
+});
