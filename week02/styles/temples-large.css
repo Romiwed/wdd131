@@ -1,0 +1,24 @@
+@media screen and (min-width: 768px) {
+  header {
+    padding: 1rem 2rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+  }
+
+  .navigation a {
+    padding: 0.75rem 1rem;
+  }
+
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,37 @@
+@media (min-width: 37.5em) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: static;
+        width: auto;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 1rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
