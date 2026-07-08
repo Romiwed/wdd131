@@ -1,15 +1,6 @@
-@media screen and (min-width: 37.5em) {
-
+@media screen and (min-width: 600px) {
     #menu {
         display: none;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 1rem;
-        margin-top: 0;
     }
 
     header {
@@ -18,7 +9,26 @@
         align-items: center;
     }
 
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-top: 0;
+    }
+
+    main {
+        max-width: 760px;
+    }
+
     .temple-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure {
+        width: 180px;
+    }
+
+    figure img {
+        width: 180px;
     }
 }

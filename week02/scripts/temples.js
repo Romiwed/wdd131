@@ -1,17 +1,20 @@
-const currentYear = document.querySelector("#currentyear");
-const lastModified = document.querySelector("#lastModified");
-
-currentYear.textContent = new Date().getFullYear();
-lastModified.textContent = `Last Modification: ${document.lastModified}`;
-
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 
 menuButton.addEventListener("click", () => {
-  navigation.classList.toggle("open");
+    navigation.classList.toggle("open");
 
-  const isOpen = navigation.classList.contains("open");
-
-  menuButton.textContent = isOpen ? "X" : "☰";
-  menuButton.setAttribute("aria-expanded", isOpen);
+    if (navigation.classList.contains("open")) {
+        menuButton.textContent = "✖";
+        menuButton.setAttribute("aria-expanded", "true");
+    } else {
+        menuButton.textContent = "☰";
+        menuButton.setAttribute("aria-expanded", "false");
+    }
 });
+
+// Footer
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+
+document.querySelector("#lastModified").textContent =
+    `Last Modification: ${document.lastModified}`;
