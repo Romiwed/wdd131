@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta
+		name="description"
+		content="Actividad de imágenes responsivas del Templo de Guayaquil Ecuador"
+	>
+	<meta name="author" content="Tu nombre">
+
+	<title>Responsive Images</title>
+
+	<link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+	<main>
+		<div class="hero">
+			<picture>
+				<source
+					srcset="images/hero-large"
+					media="(min-width: 1000px)"
+				>
+
+				<source
+					srcset="images/hero-medium.webp"
+					media="(min-width: 500px)"
+				>
+
+				<img
+					src="images/hero-small.webp"
+					alt="Templo de Guayaquil Ecuador rodeado de jardines"
+					width="1500"
+					height="750"
+				>
+			</picture>
+		</div>
+	</main>
+</body>
+</html>

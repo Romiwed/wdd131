@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="A responsive country page featuring Ecuador, information about the country, and weather conditions."
+    >
+    <meta name="author" content="Romina De Santis Cruz">
+
+    <title>Ecuador | Country Page</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ecuador</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source
+                    srcset="images/Quito-large.webp"
+                    media="(min-width: 800px)"
+                >
+
+                <img
+                    src="images/Quito-small.webp"
+                    alt="Quito Ecuador Temple surrounded by gardens at sunset"
+                    width="500"
+                    height="750"
+                >
+            </picture>
+
+            <section class="information-card data-card">
+                <h2>Data</h2>
+
+                <dl>
+                    <div>
+                        <dt>Area:</dt>
+                        <dd>283,561 km²</dd>
+                    </div>
+
+                    <div>
+                        <dt>Population:</dt>
+                        <dd>18,000,000</dd>
+                    </div>
+
+                    <div>
+                        <dt>Capital:</dt>
+                        <dd>Quito</dd>
+                    </div>
+
+                    <div>
+                        <dt>Languages:</dt>
+                        <dd>Spanish, Kichwa</dd>
+                    </div>
+
+                    <div>
+                        <dt>Currency:</dt>
+                        <dd>US Dollar</dd>
+                    </div>
+
+                    <div>
+                        <dt>Time Zone:</dt>
+                        <dd>UTC−5</dd>
+                    </div>
+
+                    <div>
+                        <dt>Calling Code:</dt>
+                        <dd>+593</dd>
+                    </div>
+
+                    <div>
+                        <dt>Internet TLD:</dt>
+                        <dd>.ec</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section class="information-card weather-card">
+                <h2>Weather</h2>
+
+                <img
+                    class="weather-icon"
+                    src="images/weather.svg"
+                    alt="Partly cloudy weather"
+                    width="90"
+                    height="90"
+                >
+
+                <dl>
+                    <div>
+                        <dt>Temperature:</dt>
+                        <dd><span id="temperature">10</span> °C</dd>
+                    </div>
+
+                    <div>
+                        <dt>Conditions:</dt>
+                        <dd>Partly Cloudy</dd>
+                    </div>
+
+                    <div>
+                        <dt>Wind:</dt>
+                        <dd><span id="wind-speed">5</span> km/h</dd>
+                    </div>
+
+                    <div>
+                        <dt>Wind Chill:</dt>
+                        <dd><span id="wind-chill">N/A</span></dd>
+                    </div>
+                </dl>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            🌴 Romina De Santis Cruz 🌴 Ecuador
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #ffdd00;
+    --secondary-color: #0057b8;
+    --accent-color: #c8102e;
+    --page-background: #eef7ee;
+    --card-background: rgb(255 255 255 / 0.92);
+    --text-color: #17202a;
+    --light-text: #ffffff;
+    --border-color: #d3d7dc;
+    --shadow: 0 4px 14px rgb(0 0 0 / 0.3);
+    --maximum-width: 1500px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--page-background);
+}
+
+header {
+    padding: 1.4rem;
+    color: var(--light-text);
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-bottom: 0.6rem solid var(--primary-color);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+main {
+    max-width: var(--maximum-width);
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero picture {
+    display: block;
+}
+
+.hero picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.information-card {
+    padding: 1.25rem;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.information-card h2 {
+    margin: 0 0 1.2rem;
+    font-size: 2rem;
+}
+
+.information-card dl {
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.information-card dl div {
+    display: grid;
+    grid-template-columns: minmax(120px, 1fr) minmax(130px, 1fr);
+    gap: 0.75rem;
+    padding: 0.35rem 0;
+}
+
+.information-card dt {
+    font-weight: 700;
+    text-align: right;
+}
+
+.information-card dd {
+    margin: 0;
+    text-align: left;
+}
+
+.weather-icon {
+    display: block;
+    margin: 0 auto 1.25rem;
+}
+
+footer {
+    padding: 1.25rem;
+    color: var(--light-text);
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-top: 0.5rem solid var(--primary-color);
+}
+
+footer p {
+    margin: 0.4rem;
+}
+
+#lastModified {
+    color: #fff4a3;
+    font-size: 0.9rem;
+}
+
+/* Vista de escritorio */
+@media screen and (min-width: 800px) {
+    header {
+        padding: 1.75rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero picture img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .information-card {
+        position: absolute;
+        width: 330px;
+        padding: 1.25rem;
+        background-color: var(--card-background);
+        border: 0;
+        box-shadow: var(--shadow);
+    }
+
+    .data-card {
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    .weather-card {
+        right: 2.5rem;
+        bottom: 2.5rem;
+    }
+
+    .information-card h2 {
+        margin: 0 0 1rem -2rem;
+        padding: 0.8rem 1rem;
+        color: var(--light-text);
+        text-align: left;
+        background-color: var(--secondary-color);
+    }
+
+    .weather-card h2::after {
+        content: " ⛅";
+    }
+
+    .weather-icon {
+        display: none;
+    }
+}
