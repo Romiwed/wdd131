@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 75px;
+    background-color: white;
+}
+
+table {
+    width: 458px;
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    padding-top: 4px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+th,
+td {
+    border: 1px solid #d2d2d2;
+    padding: 8px 18px;
+    text-align: center;
+}
+
+.company {
+    padding: 17px;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    border-color: black;
+}
+
+thead tr:nth-child(2) th {
+    padding: 18px;
+    background-color: #333333;
+    color: white;
+    font-size: 20px;
+}
+
+thead tr:nth-child(2) .empty {
+    background-color: black;
+    border-color: black;
+}
+
+tbody th {
+    padding-left: 18px;
+    text-align: left;
+    font-size: 17px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e8e8e8;
+}
+
+.yes {
+    color: #665b9d;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.no {
+    color: #ff3366;
+    font-size: 28px;
+    font-weight: bold;
+}

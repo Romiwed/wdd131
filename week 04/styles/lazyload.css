@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 2rem;
+}
+
+main img {
+    display: block;
+    width: 400px;
+    height: 600px;
+    max-width: 100%;
+    object-fit: cover;
+    margin: 0 auto 2rem;
+    background-color: black;
+    animation: fade-from-black 1.5s ease-in;
+    main {
+    border: 10px solid red;
+}
+
+main img {
+    display: block !important;
+    margin: 20px auto !important;
+}
+}
+
+@keyframes fade-from-black {
+    from {
+        opacity: 0;
+        filter: brightness(0);
+    }
+
+    to {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+footer {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
