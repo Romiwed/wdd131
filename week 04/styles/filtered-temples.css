@@ -134,6 +134,10 @@ footer p {
         text-align: left;
     }
 
+    nav {
+        display: flex;
+    }
+
     .navigation {
         display: flex;
         gap: 0.5rem;
