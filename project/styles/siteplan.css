@@ -26,31 +26,16 @@ footer {
 }
 
 header {
-  padding: 1.5rem;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.logo {
-  display: flex;
-  width: 65px;
-  height: 65px;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid var(--white-color);
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  font-family: "Poppins", Arial, sans-serif;
-  font-size: 1.4rem;
-  font-weight: 700;
+header img {
+  display: block;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
 }
 
 h1,
@@ -258,5 +243,28 @@ footer p {
   .wireframe-layout {
     grid-template-columns: 1fr 2fr;
     align-items: start;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  header img {
+    width: 140px;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .desktop-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .desktop-header {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
