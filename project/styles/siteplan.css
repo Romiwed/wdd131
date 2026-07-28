@@ -178,7 +178,7 @@ figcaption {
 
 .wf-header,
 .wf-footer {
-  background-color: var(--primary-color) !important;
+  background-color: var(--primary-color);
   color: var(--white-color);
   font-weight: 700;
 }
@@ -207,11 +207,12 @@ figcaption {
   min-height: 80px;
   align-items: center;
   justify-content: center;
-  border-color: var(--accent-color) !important;
+  border: 2px solid var(--accent-color);
+  background-color: var(--white-color);
 }
 
 .desktop-header {
-  display: flex !important;
+  display: flex;
   justify-content: space-between;
 }
 
