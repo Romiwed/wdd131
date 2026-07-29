@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Product review form for submitting product ratings and feedback."
+  >
+  <meta name="author" content="Romina De Santis Cruz">
+
+  <title>Product Review Form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+<link rel="stylesheet" href="styles/form.css">
+<script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form id="product-review-form" method="get" action="review.html">
+      <p class="required-note">
+        Fields marked with an asterisk (*) are required.
+      </p>
+
+      <fieldset>
+        <legend>Product Information</legend>
+
+        <label for="product-name">
+          Product Name <span class="required">*</span>
+        </label>
+
+        <select
+          id="product-name"
+          name="product"
+          required
+        >
+          <option value="" disabled selected>
+            Select a Product ...
+          </option>
+        </select>
+
+        <div class="rating-group">
+          <p class="field-label">
+            Overall Rating <span class="required">*</span>
+          </p>
+
+          <div class="stars">
+            <label for="rating1">
+              <span>1</span>
+              <span aria-hidden="true">☆</span>
+              <input
+                type="radio"
+                id="rating1"
+                name="rating"
+                value="1"
+                required
+              >
+            </label>
+
+            <label for="rating2">
+              <span>2</span>
+              <span aria-hidden="true">☆</span>
+              <input
+                type="radio"
+                id="rating2"
+                name="rating"
+                value="2"
+                required
+              >
+            </label>
+
+            <label for="rating3">
+              <span>3</span>
+              <span aria-hidden="true">☆</span>
+              <input
+                type="radio"
+                id="rating3"
+                name="rating"
+                value="3"
+                required
+              >
+            </label>
+
+            <label for="rating4">
+              <span>4</span>
+              <span aria-hidden="true">☆</span>
+              <input
+                type="radio"
+                id="rating4"
+                name="rating"
+                value="4"
+                required
+              >
+            </label>
+
+            <label for="rating5">
+              <span>5</span>
+              <span aria-hidden="true">☆</span>
+              <input
+                type="radio"
+                id="rating5"
+                name="rating"
+                value="5"
+                required
+              >
+            </label>
+          </div>
+        </div>
+
+        <label for="installation-date">
+          Date of Installation <span class="required">*</span>
+        </label>
+
+        <input
+          type="date"
+          id="installation-date"
+          name="installation-date"
+          required
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Product Features</legend>
+
+        <p class="field-label">
+          Which features did you find useful?
+          <span class="optional">(Check all that apply)</span>
+        </p>
+
+        <div class="checkbox-group">
+          <label for="durability">
+            <input
+              type="checkbox"
+              id="durability"
+              name="features"
+              value="durability"
+            >
+            Durability
+          </label>
+
+          <label for="ease-of-use">
+            <input
+              type="checkbox"
+              id="ease-of-use"
+              name="features"
+              value="ease-of-use"
+            >
+            Ease of Use
+          </label>
+
+          <label for="performance">
+            <input
+              type="checkbox"
+              id="performance"
+              name="features"
+              value="performance"
+            >
+            Performance
+          </label>
+
+          <label for="design">
+            <input
+              type="checkbox"
+              id="design"
+              name="features"
+              value="design"
+            >
+            Design
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Review</legend>
+
+        <label for="written-review">
+          Written Review
+          <span class="optional">(Optional)</span>
+        </label>
+
+        <textarea
+          id="written-review"
+          name="written-review"
+          rows="6"
+          placeholder="Tell us about your experience with the product."
+        ></textarea>
+
+        <label for="user-name">
+          Your Name
+          <span class="optional">(Optional)</span>
+        </label>
+
+        <input
+          type="text"
+          id="user-name"
+          name="user-name"
+          autocomplete="name"
+          placeholder="Enter your name"
+        >
+      </fieldset>
+      <input
+        type="submit"
+        value="Submit Product Review"
+        class="submit-button"
+      >
+    </form>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy;  <span id="current-year"></span>
+      | Romina De Santis Cruz
+      | Product Review
+    </p>
+
+    <p id="last-modified"></p>
+  </footer>
+</body>
+</html>

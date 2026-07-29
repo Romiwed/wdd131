@@ -1,0 +1,294 @@
+:root {
+  --primary-color: #0b4f6c;
+  --secondary-color: #f4e9d8;
+  --accent-color: #c84f35;
+  --text-color: #1f2933;
+  --white-color: #ffffff;
+  --border-color: #8a969d;
+  --focus-color: #f6b73c;
+  --success-color: #287a3e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  padding: 1.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+}
+
+h1,
+h2,
+legend {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  width: 92%;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+form,
+.confirmation {
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  box-shadow: 0 3px 12px rgb(0 0 0 / 15%);
+}
+
+.required-note {
+  margin-top: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+fieldset {
+  margin: 0 0 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+legend {
+  padding: 0 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+label,
+.field-label {
+  display: block;
+  margin: 1rem 0 0.4rem;
+  font-weight: 600;
+}
+
+.required {
+  color: #a61b1b;
+}
+
+.optional {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font: inherit;
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+select:focus,
+input:focus,
+textarea:focus,
+a:focus {
+  outline: 3px solid var(--focus-color);
+  outline-offset: 2px;
+}
+
+.rating-group {
+  margin-top: 1rem;
+}
+
+.stars {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  max-width: 420px;
+}
+
+.stars label {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  gap: 0.2rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.stars label span:first-child {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.stars label span:last-child {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.stars input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+.checkbox-group {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.checkbox-group label {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.submit-button {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.confirmation {
+  text-align: center;
+}
+
+.confirmation h2 {
+  color: var(--primary-color);
+}
+
+.confirmation-icon {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background-color: var(--success-color);
+  color: var(--white-color);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.review-count {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-left: 5px solid var(--accent-color);
+  background-color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.return-link {
+  display: inline-block;
+  min-height: 44px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.return-link:hover {
+  background-color: var(--accent-color);
+}
+
+footer {
+  padding: 1.25rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+}
+
+footer p {
+  margin: 0.25rem;
+}
+
+#last-modified {
+  color: #f9d9a7;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 700px) {
+  form,
+  .confirmation {
+    padding: 2rem;
+  }
+
+  .checkbox-group {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    width: 95%;
+    margin: 1rem auto;
+  }
+
+  form,
+  .confirmation {
+    padding: 1rem;
+  }
+
+  fieldset {
+    padding: 1rem;
+  }
+
+  .stars {
+    gap: 0.2rem;
+  }
+
+  .stars label span:last-child {
+    font-size: 1.5rem;
+  }
+}
