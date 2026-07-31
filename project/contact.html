@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Contact Milan Explorer and share questions, suggestions, or recommendations about Milan, Italy."
+    >
+
+    <meta
+        name="author"
+        content="Romina De Santis Cruz"
+    >
+
+    <title>Milan Explorer | Contact</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="styles/hometown.css"
+    >
+
+    <script
+        src="scripts/hometown.js"
+        defer
+    ></script>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a
+        class="brand"
+        href="index.html"
+    >
+
+        <img
+            src="images/hometown-explorer-logo.png"
+            alt="Milan Explorer Logo"
+            width="80"
+            height="80"
+        >
+
+        <span>Milan Explorer</span>
+
+    </a>
+
+    <button
+        id="menu-button"
+        class="menu-button"
+        type="button"
+        aria-label="Open Navigation"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+    >
+        ☰
+    </button>
+
+    <nav
+        id="main-navigation"
+        class="main-navigation"
+        aria-label="Main navigation"
+    >
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="attractions.html">
+            Attractions
+        </a>
+
+        <a
+            class="active"
+            href="contact.html"
+            aria-current="page"
+        >
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+<main class="page-main">
+
+    <section class="page-intro">
+
+        <h1>Contact Milan Explorer</h1>
+
+        <p>
+            Send us a question, suggestion, or recommendation
+            about a place to visit in Milan.
+        </p>
+
+    </section>
+
+    <section class="content-section form-section">
+
+        <h2>Send a Message</h2>
+
+        <form
+            id="contact-form"
+            class="contact-form"
+            method="get"
+            action="form-response.html"
+        >
+
+            <label for="first-name">
+                First Name
+                <span aria-hidden="true">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="first-name"
+                name="firstName"
+                autocomplete="given-name"
+                required
+            >
+
+            <label for="last-name">
+                Last Name
+                <span aria-hidden="true">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="last-name"
+                name="lastName"
+                autocomplete="family-name"
+                required
+            >
+
+            <label for="email">
+                Email Address
+                <span aria-hidden="true">*</span>
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                placeholder="name@example.com"
+                required
+            >
+
+            <label for="topic">
+                Message Topic
+            </label>
+
+            <select
+                id="topic"
+                name="topic"
+            >
+                <option value="general">
+                    General Question
+                </option>
+
+                <option value="attraction">
+                    Attraction Recommendation
+                </option>
+
+                <option value="restaurant">
+                    Restaurant Recommendation
+                </option>
+
+                <option value="feedback">
+                    Website Feedback
+                </option>
+
+            </select>
+
+            <fieldset>
+
+                <legend>
+                    Have you visited Milan?
+                </legend>
+
+                <label class="radio-option">
+
+                    <input
+                        type="radio"
+                        name="visitedMilan"
+                        value="yes"
+                        required
+                    >
+
+                    Yes
+
+                </label>
+
+                <label class="radio-option">
+
+                    <input
+                        type="radio"
+                        name="visitedMilan"
+                        value="no"
+                    >
+
+                    No
+
+                </label>
+
+            </fieldset>
+
+            <label for="message">
+                Message
+                <span aria-hidden="true">*</span>
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="7"
+                placeholder="Write your message here..."
+                required
+            ></textarea>
+
+            <label class="checkbox-option">
+
+                <input
+                    type="checkbox"
+                    id="newsletter"
+                    name="newsletter"
+                    value="yes"
+                >
+
+                I would like to receive Milan travel updates.
+
+            </label>
+
+            <button
+                class="button"
+                type="submit"
+            >
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+
+    <p>
+        &copy;
+        <span id="current-year"></span>
+        Milan Explorer
+    </p>
+
+    <p>
+
+        <a href="references.html">
+            References
+        </a>
+
+    </p>
+
+    <p id="last-modified"></p>
+
+</footer>
+
+</body>
+
+</html>

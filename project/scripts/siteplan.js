@@ -1,5 +1,10 @@
-"use strict";
+const currentYear = document.querySelector("#current-year");
+const lastModified = document.querySelector("#last-modified");
 
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Hometown Explorer Site Plan loaded successfully.");
-});
+if (currentYear) {
+    currentYear.textContent = `${new Date().getFullYear()}`;
+}
+
+if (lastModified) {
+    lastModified.textContent = `Last modified: ${document.lastModified}`;
+}
